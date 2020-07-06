@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ColorPickDialog</class>
+ <widget class="QDialog" name="ColorPickDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>621</width>
+    <height>415</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="3" column="0">
+    <widget class="QPushButton" name="pushButton_AddColor">
+     <property name="text">
+      <string>Add to Custom Colors</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>308</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="1">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>Pick Screen Color</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" rowspan="4">
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="4,1">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="12,1">
+       <item>
+        <widget class="HsvPanelWidget" name="widget_HsvPanel" native="true"/>
+       </item>
+       <item>
+        <widget class="LumaSliderWidget" name="widget_Luma" native="true">
+         <widget class="QSplitter" name="splitter">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>80</y>
+            <width>160</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="1">
+        <widget class="QSpinBox" name="spinBox_Val">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Hue</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="spinBox_Hue">
+         <property name="maximum">
+          <number>359</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QSpinBox" name="spinBox_Red">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>Y:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QSpinBox" name="spinBox_Y">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Sat</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="spinBox_Sat">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Green:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>U:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QSpinBox" name="spinBox_U">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="singleStep">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Val</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Blue:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QSpinBox" name="spinBox_Blue">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>V:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5">
+        <widget class="QSpinBox" name="spinBox_V">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Red:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>HTML:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1" colspan="3">
+        <widget class="QLineEdit" name="lineEdit_Html"/>
+       </item>
+       <item row="1" column="3">
+        <widget class="QSpinBox" name="spinBox_Green">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="5">
+        <widget class="ColorWidget" name="widget_Color" native="true"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="1" column="4">
+      <widget class="ColorWidget" name="widget_Color_6" native="true">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Qwidget { background-color: rgb(255, 255, 255) }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="ColorWidget" name="widget_Color_2" native="true">
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Qwidget { background-color: rgb(255, 255, 255) }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="ColorWidget" name="widget_Color_4" native="true">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Qwidget { background-color: rgb(255, 255, 255) }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="ColorWidget" name="widget_Color_16" native="true">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Qwidget { background-color: rgb(255, 255, 255) }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="ColorWidget" name="widget_Color_3" native="true">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Qwidget { background-color: rgb(255, 255, 255) }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="7">
+      <widget class="ColorWidget" name="widget_Color_9" native="true">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Qwidget { background-color: rgb(255, 255, 255) }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="ColorWidget" name="widget_Color_14" native="true">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Qwidget { background-color: rgb(255, 255, 255) }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="ColorWidget" name="widget_Color_10" native="true">
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Qwidget { background-color: rgb(255, 255, 255) }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="ColorWidget" name="widget_Color_12" native="true">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Qwidget { background-color: rgb(255, 255, 255) }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="ColorWidget" name="widget_Color_5" native="true">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Qwidget { background-color: rgb(255, 255, 255) }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="ColorWidget" name="widget_Color_7" native="true">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Qwidget { background-color: rgb(255, 255, 255) }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="ColorWidget" name="widget_Color_17" native="true">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Qwidget { background-color: rgb(255, 255, 255) }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="7">
+      <widget class="ColorWidget" name="widget_Color_13" native="true">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Qwidget { background-color: rgb(255, 255, 255) }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="6">
+      <widget class="ColorWidget" name="widget_Color_8" native="true">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Qwidget { background-color: rgb(255, 255, 255) }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="ColorWidget" name="widget_Color_11" native="true">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Qwidget { background-color: rgb(255, 255, 255) }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="ColorWidget" name="widget_Color_15" native="true">
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">Qwidget { background-color: rgb(255, 255, 255) }</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>HsvPanelWidget</class>
+   <extends>QWidget</extends>
+   <header>CustomWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>LumaSliderWidget</class>
+   <extends>QWidget</extends>
+   <header>CustomWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ColorWidget</class>
+   <extends>QWidget</extends>
+   <header>CustomWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ColorPickDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ColorPickDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
